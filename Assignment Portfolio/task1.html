@@ -4,35 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styling.css">
 </head>
 <body>
+    <header class="header" >
     <h1> Mr.Mike Cruz</h1>
     <h2> |Co-Founder|Director| </h2>
-    <a href="#Introduction"> About the Director</a>|
-    <a href="#Experience"> Director's experience in his field</a>|
-    <a href="#Skills"> Director's Skills</a>|
-    <a href="#Projects"> Projects accomplished by him</a>|
-    <a href="#Youtube"> Youtube video link</a>|
+    <nav class="navpos">
+    <a href="#Introduction"  class="link"> About the Director</a>|
+    <a href="#Experience" class="link"> Director's experience in his field</a>|
+    <a href="#Skills" class="link"> Director's Skills</a>|
+    <a href="#Projects" class="link"> Projects accomplished by him</a>|
+    <a href="#Youtube" class="link"> Youtube video link</a>|
+    <a href="#Form" class="link"> Go to forms</a>|
+    </nav>
+    </header>
 
-    <h1 id="Introduction"> Introduction</h1>
+    <section id="Introduction">
+    <h1> Introduction</h1>
     <p><strong>Mr. Mike Cruz</strong> is the <em>Director and Co-Founder</em> 
     of the company, with over 10 years of experience in product 
     development and brand strategy within the beauty and skincare industry. 
     <u>Known for his ingredient-first, science-backed approach to 
     formulation</u>, he has helped build the brand's reputation for clean, 
     effective skincare. He holds a degree in <b>Cosmetology</b> and is passionate about clean, effective formulations. 
-    His research focuses on skin-loving compounds such as Hyaluronic Acid (C<sub>14</sub>H<sub>21</sub>NO<sub>11</sub>), 
-    Salicylic Acid (C<sub>7</sub>H<sub>6</sub>O<sub>3</sub>), Azelaic Acid (C<sub>9</sub>H<sub>16</sub>O<sub>4</sub>) and minerals like
-    Zinc <sup>2+</sup>oxide,studying how these ingredients can improve product safety and skin health. Under his 
+    His research focuses on skin-loving compounds such as <mark>Hyaluronic Acid (C<sub>14</sub>H<sub>21</sub>NO<sub>11</sub>), 
+    Salicylic Acid (C<sub>7</sub>H<sub>6</sub>O<sub>3</sub>), Azelaic Acid (C<sub>9</sub>H<sub>16</sub>O<sub>4</sub>)and minerals like
+    Zinc <sup>2+</sup>oxide </mark>,studying how these ingredients can improve product safety and skin health. Under his 
     leadership, the brand has grown a loyal, ingredient-conscious customer base. Outside of work, 
     he frequently says, <i>"good skin starts with good chemistry."</i>
     </p>
     <figure>
     <img src="boss.jpg" alt="boss" width="300" height="300">
-    <figcaption>  Pretty Bossy </figcaption>
+    <figcaption>  Mr. Cruz, Co-founder and Director </figcaption>
     </figure>
+    </section>
 
-    <h1 id="Experience"> Experience</h1>
+    <section id="Experience">
+    <h1> Experience</h1>
     <ol>
         <li>Director & Co-Founder</li>
         <li>Product Formulation Lead </li>
@@ -41,8 +50,11 @@
         <li>Industry Collaborations </li>
         <li>Mentor & Speaker </li>
     </ol>
-    <h1 id="Skills"> Skills</h1>
-    <table>
+    </section>
+
+    <section id="Skills">
+    <h1> Skills</h1>
+    <table class="Skilltbl">
         <thead>
             <tr>
                 <th>
@@ -70,7 +82,7 @@
             </tr>
             <tr>
                 <td>
-                    <li>Dermatological Product Testing</li>
+                    Dermatological Product Testing
                 </td>
                 <td> 
 
@@ -81,7 +93,7 @@
             </tr>
             <tr>
                 <td>
-                    <li>Skincare Trend Analysis</li>
+                    Skincare Trend Analysis
                 </td>
                 <td> 
 
@@ -92,7 +104,7 @@
             </tr>
             <tr>
                 <td>
-                    <li>Ingredient Safety & Sourcing</li>
+                    Ingredient Safety & Sourcing
                 </td>
                 <td> 
 
@@ -103,15 +115,60 @@
             </tr>
         </tbody>
     </table>
-    <h1 id="Projects">Projects</h1>
-    <ul>
+    </section>
+
+    <section id="Projects">
+    <h1>Projects</h1>
+    <ul class="project-grid">
         <li>Formulated bi-phase facial serum blending oil and actives</li>
         <li>Exfoliating toner pads for on-the-go resurfacing</li>
         <li>Overnight gel mask for barrier repair</li>
         <li>Foaming toner for balanced, gentle cleansing</li>
         <li>Mini skincare fridge to extend product freshness</li>
+        <li>Red light elasticity booster</li>
     </ul>
-    <h1 id="Youtube">Video Link</h1>
-    <iframe  src="https://www.youtube.com/embed/6nIgQKuTzVI" ></iframe>
+    </section>
+    <section id="Youtube">
+    <h1 >Video Link</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6nIgQKuTzVI" ></iframe>
+    </section>
+
+    <section>
+    <h1>Register</h1>
+    <form action="/submit" method="POST" id="Form">
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required >
+
+        <label for="email">Email</label>
+        <input type="email" id="email">
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone">
+
+        <label for="gender">Gender</label>
+
+        <label for="Male">
+        <input type="radio" id="Male" name="gender" value="Male">Male
+        </label>
+
+        <label for="Female">
+        <input type="radio" id="Female"  name="gender" value="Female">Female
+        </label>
+
+        <label for="Others">
+        <input type="radio" id="Others" name="gender" value="Others">Others
+        </label>
+
+        <label for="role">Role</label>
+        <select id="role" name="role">
+            <option value="Manager">Manager</option>
+            <option value="Employee">Employee</option>
+            <option value="Intern">Intern</option>
+        </select>
+
+        <button type="submit" id ="button">Register</button>
+    </form>
+    </section>
 </body>
 </html>
